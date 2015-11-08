@@ -60,6 +60,11 @@ echo $max / ($max - $min) * 100 - 1;
 
 				if (h) {
 					document.getElementsByTagName('h1')[0].firstChild.firstChild.nodeValue = 'Slain Asses Slay';
+					var g = document.getElementsByClassName('progress');
+
+					for (var i = 0; i < g.length; i++) {
+						g.className += ' konami';
+					}
 				}
 			}
 		// ]]></script>

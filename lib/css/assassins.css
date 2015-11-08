@@ -16,6 +16,17 @@
 		color: #70c2b1;
 	}
 }
+@keyframes flip {
+	0% {
+		transform: scaleX(1);
+	}
+	50% {
+		transform: scaleX(-1);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
 @keyframes load {
 	0% {
 		width: 0;
@@ -80,6 +91,17 @@
 	99% {
 		border-color: #70c2b1;
 		color: #70c2b1;
+	}
+}
+@-webkit-keyframes flip {
+	0% {
+		-webkit-transform: scaleX(1);
+	}
+	50% {
+		-webkit-transform: scaleX(-1);
+	}
+	100% {
+		-webkit-transform: scaleX(1);
 	}
 }
 @-webkit-keyframes load {
@@ -148,6 +170,17 @@
 		color: #70c2b1;
 	}
 }
+@-o-keyframes flip {
+	0% {
+		-o-transform: scaleX(1);
+	}
+	50% {
+		-o-transform: scaleX(-1);
+	}
+	100% {
+		-o-transform: scaleX(1);
+	}
+}
 @-o-keyframes load {
 	0% {
 		width: 0;
@@ -212,6 +245,17 @@
 	99% {
 		border-color: #70c2b1;
 		color: #70c2b1;
+	}
+}
+@-moz-keyframes flip {
+	0% {
+		-moz-transform: scaleX(1);
+	}
+	50% {
+		-moz-transform: scaleX(-1);
+	}
+	100% {
+		-moz-transform: scaleX(1);
 	}
 }
 @-moz-keyframes load {
@@ -463,6 +507,20 @@ blockquote {
 }
 #scores table .progress {
 	width: 100%;
+}
+.progress.konami {
+	animation-name: flip;
+	animation-duration: 800ms;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: flip;
+	-webkit-animation-duration: 800ms;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-name: flip;
+	-o-animation-duration: 800ms;
+	-o-animation-iteration-count: infinite;
+	-moz-animation-name: flip;
+	-moz-animation-duration: 800ms;
+	-moz-animation-iteration-count: infinite;
 }
 .progress span {
 	float: left;
