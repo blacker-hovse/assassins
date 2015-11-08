@@ -510,16 +510,16 @@ blockquote {
 }
 .progress.konami {
 	animation-name: flip;
-	animation-duration: 800ms;
+	animation-duration: 1200ms;
 	animation-iteration-count: infinite;
 	-webkit-animation-name: flip;
-	-webkit-animation-duration: 800ms;
+	-webkit-animation-duration: 1200ms;
 	-webkit-animation-iteration-count: infinite;
 	-o-animation-name: flip;
-	-o-animation-duration: 800ms;
+	-o-animation-duration: 1200ms;
 	-o-animation-iteration-count: infinite;
 	-moz-animation-name: flip;
-	-moz-animation-duration: 800ms;
+	-moz-animation-duration: 1200ms;
 	-moz-animation-iteration-count: infinite;
 }
 .progress span {
