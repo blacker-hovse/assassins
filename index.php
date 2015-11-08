@@ -1,13 +1,18 @@
 <?
 include(__DIR__ . '/lib/md/Michelf/MarkdownExtra.inc.php');
+$year = 1970;
 $scores = array();
 $handle = fopen(__DIR__ . '/src/scores.yaml', 'r');
 
 while ($buffer = fgets($handle)) {
-	$buffer = explode(': ', $buffer, 2);
+	$scoring = false;
 
-	if (count($buffer) == 2) {
-		$scores[$buffer[0]] = (int) $buffer[1];
+	if (preg_match('/^year: (\d+)$/', $buffer, $matches)) {
+		$year = $matches[1];
+	} elseif ($buffer == 'scores:') {
+		$scoring = true;
+	} elseif (preg_match('/^ +(\w+): (\d+)$/', $buffer, $matches)) {
+		$scores[$matches[1]] = (int) $matches[2];
 	}
 }
 
