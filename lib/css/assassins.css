@@ -344,12 +344,12 @@ h3:first-child {
 	border-radius: 0.1em;
 	padding: 0.5em;
 	color: #70c2b1;
-	text-decoration: none;
 	text-transform: uppercase;
 }
 .btn:hover {
 	border-color: #adebde;
 	color: #adebde;
+	text-decoration: none;
 	animation-name: flash;
 	animation-duration: 120ms;
 	animation-timing-function: linear;
@@ -371,9 +371,25 @@ td {
 	padding: 0.2em 1em;
 	vertical-align: top;
 }
+a {
+	color: #adebde;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	text-decoration: underline;
+}
+p.small {
+	margin: 0;
+	color: #82172c;
+	font-size: 0.8em;
+}
+p.small a {
+	color: #ad1f3b;
+}
 #links {
 	right: 10%;
 	bottom: 2em;
+	text-align: right;
 }
 .main {
 	top: 6em;
@@ -397,7 +413,7 @@ td {
 #scores {
 	top: 6em;
 	right: 10%;
-	bottom: 6em;
+	bottom: 7em;
 	left: 60%;
 	margin-left: 0.5em;
 }

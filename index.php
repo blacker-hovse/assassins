@@ -59,6 +59,7 @@ echo <<<EOF
 
 EOF;
 ?>			</p>
+			<p class="small">Web design by <a href="http://dt.clrhome.org/">DT</a></p>
 		</div>
 		<div id="scores" class="block">
 			<h2>Scores</h2>
