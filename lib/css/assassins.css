@@ -481,6 +481,7 @@ p.small a {
 		right: 0 !important;
 		bottom: 0 !important;
 		left: 0 !important;
+		margin-bottom: 2em;
 	}
 	#scores {
 		margin-left: 0;
