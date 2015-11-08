@@ -1,20 +1,15 @@
 <?
 include(__DIR__ . '/lib/md/Michelf/MarkdownExtra.inc.php');
+$scores = array();
+$handle = fopen(__DIR__ . '/src/scores.yaml', 'r');
 
-$scores = array(
-	'Cannes' => 0,
-	'Fort Knight' => 0,
-	'Heaven' => 0,
-	'Hell' => 0,
-	'Misc. Off' => 0,
-	'Munth' => 0,
-	'Pub' => 0,
-	'Swamp' => 0,
-	'Tunnel' => 0,
-	'Upper P' => 0,
-	'Vatikremlin' => 0,
-	'Womb' => 0
-);
+while ($buffer = fgets($handle)) {
+	$buffer = explode(': ', $buffer, 2);
+
+	if (count($buffer) == 2) {
+		$scores[$buffer[0]] = (int) $buffer[1];
+	}
+}
 
 $max = max(100, max($scores));
 $min = min(-50, min($scores));
@@ -46,10 +41,40 @@ echo $max / ($max - $min) * 100 - 1;
 			document.onmousemove = function(e) {
 				document.body.style.backgroundPosition = -e.clientX / 80 + 'px';
 			}
+
+			var j = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+			var k = [];
+
+			document.onkeydown = function(e) {
+				var h = true;
+
+				if (k.length == 10) {
+					k.shift();
+				}
+
+				k.push(e.keyCode);
+
+				for (var i = 0; i < 10; i++) {
+					h &= j[i] == k[i];
+				}
+
+				if (h) {
+					document.getElementsByTagName('h1')[0].firstChild.firstChild.nodeValue = 'Slain Asses Slay';
+				}
+			}
 		// ]]></script>
+		<script type="text/javascript">// <![CDATA[
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-65942614-1', 'auto');
+          ga('send', 'pageview');
+        // ]]></script>
 	</head>
 	<body>
-		<h1>Alley Assassins 2015</h1>
+		<h1><span>Alley Assassins</span> 2015</h1>
 		<div id="links" class="block">
 			<p>
 <?
