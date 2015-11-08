@@ -23,7 +23,9 @@ $dir = $page == 'logs' ? '.' : '..';
 ?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>Alley Assassins 2015</title>
+		<title>Alley Assassins <?
+echo $year;
+?></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href="//fonts.googleapis.com/css?family=Share+Tech+Mono|Audiowide" rel="stylesheet" type="text/css" />
@@ -84,7 +86,9 @@ echo $max / ($max - $min) * 100 - 1;
         // ]]></script>
 	</head>
 	<body>
-		<h1><span>Alley Assassins</span> 2015</h1>
+		<h1><span>Alley Assassins</span> <?
+echo $year;
+?></h1>
 		<div id="links" class="block">
 			<p>
 <?
