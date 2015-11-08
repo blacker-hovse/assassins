@@ -47,7 +47,14 @@
 		left: 50%;
 		color: transparent;
 	}
-	50% {
+	20% {
+		top: 50%;
+		right: 50%;
+		bottom: 50%;
+		left: 50%;
+		color: transparent;
+	}
+	60% {
 		top: 1px;
 		right: 1px;
 		bottom: 1px;
@@ -106,7 +113,14 @@
 		left: 50%;
 		color: transparent;
 	}
-	50% {
+	20% {
+		top: 50%;
+		right: 50%;
+		bottom: 50%;
+		left: 50%;
+		color: transparent;
+	}
+	60% {
 		top: 1px;
 		right: 1px;
 		bottom: 1px;
@@ -165,7 +179,14 @@
 		left: 50%;
 		color: transparent;
 	}
-	50% {
+	20% {
+		top: 50%;
+		right: 50%;
+		bottom: 50%;
+		left: 50%;
+		color: transparent;
+	}
+	60% {
 		top: 1px;
 		right: 1px;
 		bottom: 1px;
@@ -224,7 +245,14 @@
 		left: 50%;
 		color: transparent;
 	}
-	50% {
+	20% {
+		top: 50%;
+		right: 50%;
+		bottom: 50%;
+		left: 50%;
+		color: transparent;
+	}
+	60% {
 		top: 1px;
 		right: 1px;
 		bottom: 1px;
@@ -309,13 +337,13 @@ h3:first-child {
 	left: 0;
 	border: 1px solid #adebde;
 	animation-name: block-body;
-	animation-duration: 800ms;
+	animation-duration: 1000ms;
 	-webkit-animation-name: block-body;
-	-webkit-animation-duration: 800ms;
+	-webkit-animation-duration: 1000ms;
 	-o-animation-name: block-body;
-	-o-animation-duration: 800ms;
+	-o-animation-duration: 1000ms;
 	-moz-animation-name: block-body;
-	-moz-animation-duration: 800ms;
+	-moz-animation-duration: 1000ms;
 }
 .content .inner {
 	position: absolute;
@@ -327,16 +355,16 @@ h3:first-child {
 	padding: 0.5em 1em;
 	overflow: auto;
 	animation-name: block-body;
-	animation-duration: 800ms;
+	animation-duration: 1000ms;
 	animation-delay: 200ms;
 	-webkit-animation-name: block-body;
-	-webkit-animation-duration: 800ms;
+	-webkit-animation-duration: 1000ms;
 	-webkit-animation-delay: 200ms;
 	-o-animation-name: block-body;
-	-o-animation-duration: 800ms;
+	-o-animation-duration: 1000ms;
 	-o-animation-delay: 200ms;
 	-moz-animation-name: block-body;
-	-moz-animation-duration: 800ms;
+	-moz-animation-duration: 1000ms;
 	-moz-animation-delay: 200ms;
 }
 .btn {
