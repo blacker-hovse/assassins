@@ -469,6 +469,9 @@ p.small a {
 		font-size: 2.5em;
 	}
 @media screen and (max-width: 640px) {
+	body {
+		overflow: auto;
+	}
 	h1 {
 		font-size: 2em;
 	}
