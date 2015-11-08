@@ -11,7 +11,7 @@ while ($buffer = fgets($handle)) {
 		$year = $matches[1];
 	} elseif ($buffer == 'scores:') {
 		$scoring = true;
-	} elseif (preg_match('/^ +(\w+): (\d+)$/', $buffer, $matches)) {
+	} elseif (preg_match('/^ +(.+): (\d+)$/', $buffer, $matches)) {
 		$scores[$matches[1]] = (int) $matches[2];
 	}
 }
