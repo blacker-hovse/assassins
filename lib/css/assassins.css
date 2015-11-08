@@ -432,6 +432,10 @@ p.small a {
 .main th {
 	padding: 1em;
 }
+.main em {
+	color: #ad1f3b;
+	font-style: normal;
+}
 #logs table {
 	font-size: 1em;
 }
