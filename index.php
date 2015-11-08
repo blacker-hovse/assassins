@@ -25,6 +25,7 @@ $dir = $page == 'logs' ? '.' : '..';
 	<head>
 		<title>Alley Assassins 2015</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href="//fonts.googleapis.com/css?family=Share+Tech+Mono|Audiowide" rel="stylesheet" type="text/css" />
 		<link href="<?
 echo $dir;
