@@ -11,7 +11,7 @@ while ($buffer = fgets($handle)) {
 	}
 }
 
-$max = max(100, max($scores));
+$max = max(50, max($scores));
 $min = min(-50, min($scores));
 $page = isset($_GET['p']) ? htmlentities($_GET['p'], NULL, 'UTF-8') : 'logs';
 $dir = $page == 'logs' ? '.' : '..';
@@ -63,7 +63,7 @@ echo $max / ($max - $min) * 100 - 1;
 					var g = document.getElementsByClassName('progress');
 
 					for (var i = 0; i < g.length; i++) {
-						g.className += ' konami';
+						g[i].className += ' konami';
 					}
 				}
 			}
