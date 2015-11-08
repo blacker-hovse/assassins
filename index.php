@@ -4,14 +4,14 @@ include(__DIR__ . '/lib/md/Michelf/MarkdownExtra.inc.php');
 $scores = array(
 	'Cannes' => 0,
 	'Fort Knight' => 0,
-	'Heaven' => 5,
+	'Heaven' => 0,
 	'Hell' => 0,
 	'Misc. Off' => 0,
 	'Munth' => 0,
 	'Pub' => 0,
 	'Swamp' => 0,
 	'Tunnel' => 0,
-	'Upper P' => -5,
+	'Upper P' => 0,
 	'Vatikremlin' => 0,
 	'Womb' => 0
 );
