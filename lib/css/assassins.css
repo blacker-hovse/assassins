@@ -1,0 +1,474 @@
+@keyframes flash {
+	0% {
+		border-color: #adebde;
+		color: #adebde;
+	}
+	49% {
+		border-color: #adebde;
+		color: #adebde;
+	}
+	50% {
+		border-color: #70c2b1;
+		color: #70c2b1;
+	}
+	99% {
+		border-color: #70c2b1;
+		color: #70c2b1;
+	}
+}
+@keyframes load {
+	0% {
+		width: 0;
+		border-width: 0;
+	}
+	50% {
+		width: 0;
+		border-width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+@keyframes block-head {
+	0% {
+		width: 0;
+		color: transparent;
+	}
+	100% {
+		width: 100%;
+		color: transparent;
+	}
+}
+@keyframes block-body {
+	0% {
+		top: 50%;
+		right: 50%;
+		bottom: 50%;
+		left: 50%;
+		color: transparent;
+	}
+	50% {
+		top: 1px;
+		right: 1px;
+		bottom: 1px;
+		left: 1px;
+	}
+	100% {
+		color: transparent;
+	}
+}
+@-webkit-keyframes flash {
+	0% {
+		border-color: #adebde;
+		color: #adebde;
+	}
+	49% {
+		border-color: #adebde;
+		color: #adebde;
+	}
+	50% {
+		border-color: #70c2b1;
+		color: #70c2b1;
+	}
+	99% {
+		border-color: #70c2b1;
+		color: #70c2b1;
+	}
+}
+@-webkit-keyframes load {
+	0% {
+		width: 0;
+		border-width: 0;
+	}
+	50% {
+		width: 0;
+		border-width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+@-webkit-keyframes block-head {
+	0% {
+		width: 0;
+		color: transparent;
+	}
+	100% {
+		width: 100%;
+		color: transparent;
+	}
+}
+@-webkit-keyframes block-body {
+	0% {
+		top: 50%;
+		right: 50%;
+		bottom: 50%;
+		left: 50%;
+		color: transparent;
+	}
+	50% {
+		top: 1px;
+		right: 1px;
+		bottom: 1px;
+		left: 1px;
+	}
+	100% {
+		color: transparent;
+	}
+}
+@-o-keyframes flash {
+	0% {
+		border-color: #adebde;
+		color: #adebde;
+	}
+	49% {
+		border-color: #adebde;
+		color: #adebde;
+	}
+	50% {
+		border-color: #70c2b1;
+		color: #70c2b1;
+	}
+	99% {
+		border-color: #70c2b1;
+		color: #70c2b1;
+	}
+}
+@-o-keyframes load {
+	0% {
+		width: 0;
+		border-width: 0;
+	}
+	50% {
+		width: 0;
+		border-width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+@-o-keyframes block-head {
+	0% {
+		width: 0;
+		color: transparent;
+	}
+	100% {
+		width: 100%;
+		color: transparent;
+	}
+}
+@-o-keyframes block-body {
+	0% {
+		top: 50%;
+		right: 50%;
+		bottom: 50%;
+		left: 50%;
+		color: transparent;
+	}
+	50% {
+		top: 1px;
+		right: 1px;
+		bottom: 1px;
+		left: 1px;
+	}
+	100% {
+		color: transparent;
+	}
+}
+@-moz-keyframes flash {
+	0% {
+		border-color: #adebde;
+		color: #adebde;
+	}
+	49% {
+		border-color: #adebde;
+		color: #adebde;
+	}
+	50% {
+		border-color: #70c2b1;
+		color: #70c2b1;
+	}
+	99% {
+		border-color: #70c2b1;
+		color: #70c2b1;
+	}
+}
+@-moz-keyframes load {
+	0% {
+		width: 0;
+		border-width: 0;
+	}
+	50% {
+		width: 0;
+		border-width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+@-moz-keyframes block-head {
+	0% {
+		width: 0;
+		color: transparent;
+	}
+	100% {
+		width: 100%;
+		color: transparent;
+	}
+}
+@-moz-keyframes block-body {
+	0% {
+		top: 50%;
+		right: 50%;
+		bottom: 50%;
+		left: 50%;
+		color: transparent;
+	}
+	50% {
+		top: 1px;
+		right: 1px;
+		bottom: 1px;
+		left: 1px;
+	}
+	100% {
+		color: transparent;
+	}
+}
+body {
+	margin: 2em 10%;
+	overflow: hidden;
+	background-color: #000a08;
+	background: linear-gradient(-90deg, #0d1c19 1px, transparent 1px), linear-gradient(#0d1c19 1px, transparent 1px), #000a08;
+	background-size: 1em 1em;
+	color: #70c2b1;
+	font-size: 20px;
+	font-family: 'Share Tech Mono', monospace;
+}
+h1 {
+	margin: 0;
+	color: #adebde;
+	text-align: right;
+	text-shadow: 0 0 0.1em #adebde;
+	text-transform: uppercase;
+	font-size: 3em;
+	font-family: Audiowide, monospace;
+}
+h3 {
+	border-bottom: 1px solid #70c2b1;
+	margin-top: 3em;
+	padding-bottom: 0.5em;
+	font-size: 1em;
+}
+h3:first-child {
+	margin-top: 0.5em;
+}
+.block {
+	position: absolute;
+}
+.block > h2 {
+	margin: 0 auto;
+	border-bottom: 1px solid #527a72;
+	color: #527a72;
+	text-transform: lowercase;
+	font-size: 1em;
+	font-weight: normal;
+	font-family: Audiowide, monospace;
+	animation-name: block-head, flash;
+	animation-duration: 400ms, 200ms;
+	animation-timing-function: ease, linear;
+	animation-delay: 0s, 600ms;
+	animation-iteration-count: 1, 2;
+	-webkit-animation-name: block-head, flash;
+	-webkit-animation-duration: 400ms, 200ms;
+	-webkit-animation-timing-function: ease, linear;
+	-webkit-animation-delay: 0s, 600ms;
+	-webkit-animation-iteration-count: 1, 2;
+	-o-animation-name: block-head, flash;
+	-o-animation-duration: 400ms, 200ms;
+	-o-animation-timing-function: ease, linear;
+	-o-animation-delay: 0s, 600ms;
+	-o-animation-iteration-count: 1, 2;
+	-moz-animation-name: block-head, flash;
+	-moz-animation-duration: 400ms, 200ms;
+	-moz-animation-timing-function: ease, linear;
+	-moz-animation-delay: 0s, 600ms;
+	-moz-animation-iteration-count: 1, 2;
+}
+.content {
+	position: absolute;
+	top: 2em;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.content .outer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 1px solid #adebde;
+	animation-name: block-body;
+	animation-duration: 800ms;
+	-webkit-animation-name: block-body;
+	-webkit-animation-duration: 800ms;
+	-o-animation-name: block-body;
+	-o-animation-duration: 800ms;
+	-moz-animation-name: block-body;
+	-moz-animation-duration: 800ms;
+}
+.content .inner {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	left: 1px;
+	border: 1px solid #527a72;
+	padding: 0.5em 1em;
+	overflow: auto;
+	animation-name: block-body;
+	animation-duration: 800ms;
+	animation-delay: 200ms;
+	-webkit-animation-name: block-body;
+	-webkit-animation-duration: 800ms;
+	-webkit-animation-delay: 200ms;
+	-o-animation-name: block-body;
+	-o-animation-duration: 800ms;
+	-o-animation-delay: 200ms;
+	-moz-animation-name: block-body;
+	-moz-animation-duration: 800ms;
+	-moz-animation-delay: 200ms;
+}
+.btn {
+	border: 0.1em solid #70c2b1;
+	border-radius: 0.1em;
+	padding: 0.5em;
+	color: #70c2b1;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.btn:hover {
+	border-color: #adebde;
+	color: #adebde;
+	animation-name: flash;
+	animation-duration: 120ms;
+	animation-timing-function: linear;
+	animation-iteration-count: 2;
+	-webkit-animation-name: flash;
+	-webkit-animation-duration: 120ms;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 2;
+	-o-animation-name: flash;
+	-o-animation-duration: 120ms;
+	-o-animation-timing-function: linear;
+	-o-animation-iteration-count: 2;
+	-moz-animation-name: flash;
+	-moz-animation-duration: 120ms;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: 2;
+}
+td {
+	padding: 0.2em 1em;
+	vertical-align: top;
+}
+#links {
+	right: 10%;
+	bottom: 2em;
+}
+.main {
+	top: 6em;
+	right: 40%;
+	bottom: 2em;
+	left: 10%;
+	margin-right: 0.5em;
+}
+.main table {
+	font-size: 0.8em;
+}
+.main th {
+	padding: 1em;
+}
+#logs table {
+	font-size: 1em;
+}
+#logs th {
+	padding: 0 1em;
+}
+#scores {
+	top: 6em;
+	right: 10%;
+	bottom: 6em;
+	left: 60%;
+	margin-left: 0.5em;
+}
+#scores table {
+	width: 100%;
+	height: 100%;
+}
+#scores table td {
+	padding: 0;
+	white-space: nowrap;
+}
+#scores table .progress {
+	width: 100%;
+}
+.progress span {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.negative span {
+	float: right;
+}
+.negative .bar {
+	background-color: #800019;
+}
+.positive .bar {
+	border-left: 1px solid #293d39;
+	background-color: #804d00;
+}
+.bar {
+	display: block;
+	animation-name: load;
+	animation-duration: 1200ms;
+	-webkit-animation-name: load;
+	-webkit-animation-duration: 1200ms;
+	-o-animation-name: load;
+	-o-animation-duration: 1200ms;
+	-moz-animation-name: load;
+	-moz-animation-duration: 1200ms;
+}
+@media screen and (max-width: 1200px) {
+	body {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 960px) {
+	body {
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 2.5em;
+	}
+@media screen and (max-width: 640px) {
+	h1 {
+		font-size: 2em;
+	}
+	.block {
+		position: relative;
+		top: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		left: 0 !important;
+	}
+	#scores {
+		margin-left: 0;
+		height: 24em;
+	}
+	.main {
+		margin-right: 0;
+		height: 32em;
+	}
+}
