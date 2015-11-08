@@ -414,6 +414,9 @@ p.small {
 p.small a {
 	color: #ad1f3b;
 }
+blockquote {
+	margin-right: 0;
+}
 #links {
 	right: 10%;
 	bottom: 2em;
