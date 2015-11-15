@@ -5,7 +5,7 @@ $scores = array();
 $handle = fopen(__DIR__ . '/src/scores.yaml', 'r');
 $scoring = false;
 
-while ($buffer = trim(fgets($handle), "\r\n")) {
+while ($buffer = rtrim(fgets($handle))) {
 	if (preg_match('/^year: (\d+)$/', $buffer, $matches)) {
 		$year = $matches[1];
 	} elseif ($buffer == 'scores:') {
