@@ -5,12 +5,12 @@ $scores = array();
 $handle = fopen(__DIR__ . '/src/scores.yaml', 'r');
 $scoring = false;
 
-while ($buffer = fgets($handle)) {
+while ($buffer = trim(fgets($handle), "\r\n")) {
 	if (preg_match('/^year: (\d+)$/', $buffer, $matches)) {
 		$year = $matches[1];
 	} elseif ($buffer == 'scores:') {
 		$scoring = true;
-	} elseif (preg_match('/^ +(.+): (-?\d+)$/', $buffer, $matches)) {
+	} elseif ($scoring and preg_match('/^ +(.+): (-?\d+)$/', $buffer, $matches)) {
 		$scores[$matches[1]] = (int) $matches[2];
 	}
 }
