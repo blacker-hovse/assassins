@@ -96,7 +96,7 @@ echo <<<EOF
 				<a href="$dir/targets/" class="btn">Targets</a>
 				<a href="$dir/rules/" class="btn">Rules</a>
 			</p>
-			<p class="small"><a href="$dir/survival.pdf">SURVIVAL GUIDE</a> &middot; web design by <a href="http://dt.clrhome.org/">DT</a></p>
+			<p class="small"><a href="$dir/../survival.pdf">SURVIVAL GUIDE</a> &middot; web design by <a href="http://dt.clrhome.org/">DT</a></p>
 
 EOF;
 ?>		</div>
