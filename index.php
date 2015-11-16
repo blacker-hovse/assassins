@@ -102,10 +102,10 @@ EOF;
 ?>		</div>
 		<div id="scores" class="block">
 			<h2>Scores</h2>
-			<div class="content">
+			<div class="container">
 				<div class="outer">
 					<div class="inner">
-						<table>
+						<table class="content">
 <?
 foreach ($scores as $alley => $score) {
 	$number = str_replace('-', '&minus;', $score);
@@ -148,12 +148,14 @@ echo $page;
 			<h2><?
 echo $page;
 ?></h2>
-			<div class="content">
+			<div class="container">
 				<div class="outer">
 					<div class="inner">
+						<div class="content">
 <?
 echo str_replace('h2>', 'h3>', \Michelf\MarkdownExtra::defaultTransform(file_get_contents(__DIR__ . "/src/$page.md")));
-?>					</div>
+?>						</div>
+					</div>
 				</div>
 			</div>
 		</div>

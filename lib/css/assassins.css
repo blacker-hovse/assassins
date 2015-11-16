@@ -1,3 +1,11 @@
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
 @keyframes flash {
 	0% {
 		border-color: #adebde;
@@ -56,23 +64,18 @@
 		right: 50%;
 		bottom: 50%;
 		left: 50%;
-		color: transparent;
 	}
-	20% {
+	33% {
 		top: 50%;
 		right: 50%;
 		bottom: 50%;
 		left: 50%;
-		color: transparent;
 	}
-	60% {
+	100% {
 		top: 2px;
 		right: 2px;
 		bottom: 2px;
 		left: 2px;
-	}
-	100% {
-		color: transparent;
 	}
 }
 @-webkit-keyframes flash {
@@ -133,23 +136,18 @@
 		right: 50%;
 		bottom: 50%;
 		left: 50%;
-		color: transparent;
 	}
-	20% {
+	33% {
 		top: 50%;
 		right: 50%;
 		bottom: 50%;
 		left: 50%;
-		color: transparent;
 	}
-	60% {
+	100% {
 		top: 2px;
 		right: 2px;
 		bottom: 2px;
 		left: 2px;
-	}
-	100% {
-		color: transparent;
 	}
 }
 @-o-keyframes flash {
@@ -210,23 +208,18 @@
 		right: 50%;
 		bottom: 50%;
 		left: 50%;
-		color: transparent;
 	}
-	20% {
+	33% {
 		top: 50%;
 		right: 50%;
 		bottom: 50%;
 		left: 50%;
-		color: transparent;
 	}
-	60% {
+	100% {
 		top: 2px;
 		right: 2px;
 		bottom: 2px;
 		left: 2px;
-	}
-	100% {
-		color: transparent;
 	}
 }
 @-moz-keyframes flash {
@@ -287,23 +280,18 @@
 		right: 50%;
 		bottom: 50%;
 		left: 50%;
-		color: transparent;
 	}
-	20% {
+	33% {
 		top: 50%;
 		right: 50%;
 		bottom: 50%;
 		left: 50%;
-		color: transparent;
 	}
-	60% {
+	100% {
 		top: 2px;
 		right: 2px;
 		bottom: 2px;
 		left: 2px;
-	}
-	100% {
-		color: transparent;
 	}
 }
 body {
@@ -366,14 +354,14 @@ h3:first-child {
 	-moz-animation-delay: 0s, 600ms;
 	-moz-animation-iteration-count: 1, 2;
 }
-.content {
+.container {
 	position: absolute;
 	top: 2em;
 	right: 0;
 	bottom: 0;
 	left: 0;
 }
-.content .outer {
+.container .outer {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -381,15 +369,15 @@ h3:first-child {
 	left: 0;
 	border: 1px solid #adebde;
 	animation-name: block-body;
-	animation-duration: 1000ms;
+	animation-duration: 600ms;
 	-webkit-animation-name: block-body;
-	-webkit-animation-duration: 1000ms;
+	-webkit-animation-duration: 600ms;
 	-o-animation-name: block-body;
-	-o-animation-duration: 1000ms;
+	-o-animation-duration: 600ms;
 	-moz-animation-name: block-body;
-	-moz-animation-duration: 1000ms;
+	-moz-animation-duration: 600ms;
 }
-.content .inner {
+.container .inner {
 	position: absolute;
 	top: 2px;
 	right: 2px;
@@ -399,17 +387,27 @@ h3:first-child {
 	padding: 0.5em 1em;
 	overflow: auto;
 	animation-name: block-body;
-	animation-duration: 1000ms;
+	animation-duration: 600ms;
 	animation-delay: 200ms;
 	-webkit-animation-name: block-body;
-	-webkit-animation-duration: 1000ms;
+	-webkit-animation-duration: 600ms;
 	-webkit-animation-delay: 200ms;
 	-o-animation-name: block-body;
-	-o-animation-duration: 1000ms;
+	-o-animation-duration: 600ms;
 	-o-animation-delay: 200ms;
 	-moz-animation-name: block-body;
-	-moz-animation-duration: 1000ms;
+	-moz-animation-duration: 600ms;
 	-moz-animation-delay: 200ms;
+}
+.container .content {
+	animation-name: appear;
+	animation-duration: 1000ms;
+	-webkit-animation-name: appear;
+	-webkit-animation-duration: 1000ms;
+	-o-animation-name: appear;
+	-o-animation-duration: 1000ms;
+	-moz-animation-name: appear;
+	-moz-animation-duration: 1000ms;
 }
 .btn {
 	outline: 1px dashed #70c2b1;
@@ -510,16 +508,16 @@ blockquote {
 }
 .progress.konami {
 	animation-name: flip;
-	animation-duration: 1200ms;
+	animation-duration: 1000ms;
 	animation-iteration-count: infinite;
 	-webkit-animation-name: flip;
-	-webkit-animation-duration: 1200ms;
+	-webkit-animation-duration: 1000ms;
 	-webkit-animation-iteration-count: infinite;
 	-o-animation-name: flip;
-	-o-animation-duration: 1200ms;
+	-o-animation-duration: 1000ms;
 	-o-animation-iteration-count: infinite;
 	-moz-animation-name: flip;
-	-moz-animation-duration: 1200ms;
+	-moz-animation-duration: 1000ms;
 	-moz-animation-iteration-count: infinite;
 }
 .progress span {
@@ -540,13 +538,13 @@ blockquote {
 .bar {
 	display: block;
 	animation-name: load;
-	animation-duration: 1200ms;
+	animation-duration: 1000ms;
 	-webkit-animation-name: load;
-	-webkit-animation-duration: 1200ms;
+	-webkit-animation-duration: 1000ms;
 	-o-animation-name: load;
-	-o-animation-duration: 1200ms;
+	-o-animation-duration: 1000ms;
 	-moz-animation-name: load;
-	-moz-animation-duration: 1200ms;
+	-moz-animation-duration: 1000ms;
 }
 @media screen and (max-width: 1200px) {
 	body {
