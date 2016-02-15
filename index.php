@@ -1,5 +1,5 @@
 <?
-include(__DIR__ . '/lib/md/Michelf/MarkdownExtra.inc.php');
+include(__DIR__ . '/../../lib/md/Michelf/MarkdownExtra.inc.php');
 $year = 1970;
 $scores = array();
 $handle = fopen(__DIR__ . '/src/scores.yaml', 'r');
@@ -30,7 +30,7 @@ echo $year;
 		<link href="//fonts.googleapis.com/css?family=Share+Tech+Mono|Audiowide" rel="stylesheet" type="text/css" />
 		<link href="<?
 echo $dir;
-?>/lib/css/assassins.css" rel="stylesheet" type="text/css" />
+?>/assassins.css" rel="stylesheet" type="text/css" />
 		<style type="text/css">
 			.progress .negative {
 				width: <?
